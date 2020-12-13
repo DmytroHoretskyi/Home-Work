@@ -25,7 +25,6 @@ public:
     ~Books() = default;
 };
 
-
 class  BookShop {
 public:
     vector <Books> books;
@@ -69,14 +68,12 @@ public:
     }
 };
 
-
 int main() {
     BookShop a = *new BookShop;
     a.addBook(Books(2000, 4, 5, 1000, "Orwell"));
     a.addBook(Books(500, 4, 5, 50, "Shewchenko"));
     a.addBook(Books(100, 4, 5, 200, "Franko"));
     a.addBook(Books(1000, 6, 8, 100, "Max Kidruck"));
-
 
     a.sortByPrice();
     a.sortBySales();
